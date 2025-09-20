@@ -1,10 +1,13 @@
-import Image from "next/image";
+import Image from "next/image"; 
 import GlobeClient from "@/components/GlobeClient";
+import MainPage from "./main/page";
+import VortexDemoSecond from "@/components/VortexClient";
 
 export default function Home() {
   return (
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <>
       <GlobeClient />
-      </main>
+    </>
+      
   );
 }

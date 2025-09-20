@@ -29,7 +29,16 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
         style={{ backgroundColor: '#000' }}
       >
-        {children}
+        <header className="w-full px-6 py-4 bg-transparent fixed top-0 z-50">
+          <nav className="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="text-white font-semibold">
+              <a href="/" className="mr-4">Home</a>
+              <a href="/main" className="underline">Main</a>
+            </div>
+          </nav>
+        </header>
+
+        <div className="pt-16">{children}</div>
       </body>
     </html>
   );

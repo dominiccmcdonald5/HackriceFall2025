@@ -411,7 +411,7 @@ export default function GlobeDemo() {
           className="div"
         >
         </motion.div>
-        <div className="absolute inset-0 z-10">
+        <div className="absolute inset-0 z-0">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
