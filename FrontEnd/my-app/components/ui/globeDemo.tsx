@@ -395,7 +395,6 @@ export default function GlobeDemo() {
   ];
 
   return (
-    <div className="fixed inset-0 w-screen h-screen dark:bg-black bg-white z-10">
       <div className="w-full h-full relative overflow-hidden px-0">
         <motion.div
           initial={{
@@ -412,11 +411,9 @@ export default function GlobeDemo() {
           className="div"
         >
         </motion.div>
-        <div className="absolute inset-0 pointer-events-none select-none z-40 bg-gradient-to-b from-transparent to-white dark:to-black" />
         <div className="absolute inset-0 z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
-    </div>
   );
 }
