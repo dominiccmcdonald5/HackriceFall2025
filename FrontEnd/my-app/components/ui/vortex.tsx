@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
@@ -19,7 +21,7 @@ interface VortexProps {
 
 export const Vortex = (props: VortexProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const animationFrameId = useRef<number>(0);
   const particleCount = props.particleCount || 700;
   const particlePropCount = 9;

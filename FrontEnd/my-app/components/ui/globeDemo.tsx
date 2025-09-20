@@ -414,6 +414,7 @@ export default function GlobeDemo() {
         <div className="absolute inset-0 z-0">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
+        <div className="text-white">Hi</div>
       </div>
   );
 }
