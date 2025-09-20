@@ -15,13 +15,13 @@ const GLOBE_CONFIG: COBEOptions = {
   devicePixelRatio: 2,
   phi: 0,
   theta: 0.3,
-  dark: 0,
-  diffuse: 0.4,
+  dark: 0.1,               // slightly dark oceans
+  diffuse: 0.5,             // smooth light on continents
   mapSamples: 16000,
-  mapBrightness: 1.2,
-  baseColor: [1, 1, 1],
-  markerColor: [251 / 255, 100 / 255, 21 / 255],
-  glowColor: [1, 1, 1],
+  mapBrightness: 1.5,       // bright land
+  baseColor: [1, 1, 1],  // very faint light blue globe
+  markerColor: [0.224, 1, 0.078], // neon green
+  glowColor: [0.1, 0.1, 0.1], 
   markers: [
     { location: [14.5995, 120.9842], size: 0.03 },
     { location: [19.076, 72.8777], size: 0.1 },
