@@ -1,6 +1,5 @@
 // app/ripple-demo/page.tsx
 "use client";
-
 import RippleClient from "@/components/rippleClient";
 import Link from "next/link";
 
