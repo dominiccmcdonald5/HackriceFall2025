@@ -1,12 +1,14 @@
 "use client";
-import { Globe } from "@/components/ui/globe";
+import Globe from "@/components/ui/globe";
 
-export default function GlobeDemo() {
+interface GlobeDemoProps {
+  onMarkerClick?: (marker: any) => void;
+}
+
+export default function GlobeDemo({ onMarkerClick }: GlobeDemoProps) {
   return (
-  <div className="relative flex w-full max-w-lg items-center justify-center rounded-lg p-8 bg-white/10">    
-  <Globe />
-  </div>
-
-
+    <div className="relative flex w-full max-w-lg items-center justify-center rounded-lg p-8 bg-white/10">
+      <Globe onMarkerClick={onMarkerClick} />
+    </div>
   );
 }
