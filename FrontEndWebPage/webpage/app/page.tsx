@@ -4,7 +4,6 @@ import { useState } from "react";
 import GlobeClient from "@/components/globeClient";
 import type { MyMarker } from "@/components/ui/globe";
 
-// Define the footprint data structure
 interface FootprintData {
   country: string;
   year: number;
@@ -51,15 +50,13 @@ export default function Home() {
     { label: "Biocapacity Total", value: data.biocapacity["Total biocapacity"] ?? "N/A" },
   ];
 
-  // Decide text color for numeric metrics (skip Biocapacity Total)
   const getMetricColor = (label: string, value: unknown): string => {
-    if (label === "Biocapacity Total" || label === "Year") return "text-white"; // neutral
-    if (typeof value !== "number") return "text-white"; // skip non-numeric
+    if (label === "Biocapacity Total" || label === "Year") return "text-white";
+    if (typeof value !== "number") return "text-white"; 
 
-    // Thresholds (based on your dataset scale)
-    if (value > 3.0) return "text-red-500";     // really bad
-    if (value >= 1.0) return "text-yellow-400"; // moderate
-    return "text-green-400";                    // stable
+    if (value > 3.0) return "text-red-500";     
+    if (value >= 1.0) return "text-yellow-400"; 
+    return "text-green-400";                    
   };
 
   return (
@@ -80,15 +77,14 @@ export default function Home() {
             className="bg-white/10 rounded-xl p-4 flex flex-col gap-4 flex-grow overflow-y-auto"
             style={{
               scrollbarWidth: "thin",
-              scrollbarColor: "#22c55e transparent", // Firefox
+              scrollbarColor: "#22c55e transparent", 
             }}
           >
             {/* Title section */}
             <div className="mb-4">
-              <h1 className="text-2xl font-bold">Welcome to Data Explorer</h1>
+              <h1 className="text-2xl font-bold">Global Resource Footprint</h1>
               <p className="text-white/80 mt-1">
-                Click on any country on the globe to view key environmental
-                statistics and biocapacity metrics for that region.
+                Explore different countries to see how consumption, production, and ecological footprints. See why sustainable resource management is critical for our future.
               </p>
             </div>
 
