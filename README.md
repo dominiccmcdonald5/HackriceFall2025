@@ -1,4 +1,4 @@
 # HackriceFall2025
 
 ### Hosted Website:
-https://globalresourcesfootprint.vercel.app/main
+https://globalresourcesfootprint.vercel.app/
