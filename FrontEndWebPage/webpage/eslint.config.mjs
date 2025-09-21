@@ -20,7 +20,7 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
     rules: {
-      "@typescript-eslint/no-explicit-any": "off", // ← disable the rule
+      "@typescript-eslint/no-explicit-any": "on", // ← disable the rule
     },
   },
 ];
