@@ -36,8 +36,8 @@ export default function Globe({ onMarkerClick }: GlobeProps) {
         pointLat="lat"
         pointLng="lng"
         pointColor={() => "limegreen"}
-        pointAltitude={0.02} // slightly higher so bigger markers float better
-        pointRadius={2.5} // ✅ make markers bigger
+        pointAltitude={0.02}
+        pointRadius={2.5} 
         onPointClick={(marker) => onMarkerClick?.(marker as MyMarker)}
       />
     </div>
