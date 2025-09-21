@@ -1,7 +1,7 @@
 "use client";
 
-import Globe from "@/components/ui/globe";
-import type { MyMarker } from "@/components/ui/globe";
+import Globe from "./globe";
+import type { MyMarker } from "./globe";
 
 interface GlobeDemoProps {
   onMarkerClick?: (marker: MyMarker) => void;
