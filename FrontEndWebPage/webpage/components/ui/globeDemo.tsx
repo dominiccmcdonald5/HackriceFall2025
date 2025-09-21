@@ -1,8 +1,10 @@
 "use client";
+
 import Globe from "@/components/ui/globe";
+import type { MyMarker } from "@/components/ui/globe";
 
 interface GlobeDemoProps {
-  onMarkerClick?: (marker: any) => void;
+  onMarkerClick?: (marker: MyMarker) => void;
 }
 
 export default function GlobeDemo({ onMarkerClick }: GlobeDemoProps) {
