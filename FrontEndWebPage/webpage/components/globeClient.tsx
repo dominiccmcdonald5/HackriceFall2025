@@ -1,10 +1,14 @@
 "use client";
+
 import dynamic from "next/dynamic";
+import type { MyMarker } from "@/components/ui/globe";
 
-const GlobeDemo = dynamic(() => import("@/components/ui/globeDemo"), {
-  ssr: false,
-});
+const Globe = dynamic(() => import("@/components/ui/globe"), { ssr: false });
 
-export default function GlobeClient() {
-  return <GlobeDemo />;
+interface GlobeClientProps {
+  onMarkerClick: (marker: MyMarker) => void;
+}
+
+export default function GlobeClient({ onMarkerClick }: GlobeClientProps) {
+  return <Globe onMarkerClick={onMarkerClick} />;
 }
