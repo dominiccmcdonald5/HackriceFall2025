@@ -84,7 +84,7 @@ export default function Home() {
             <div className="mb-4">
               <h1 className="text-2xl font-bold">Global Resource Footprint</h1>
               <p className="text-white/80 mt-1">
-                Explore different countries to see how consumption, production, and ecological footprints. See why sustainable resource management is critical for our future.
+                Explore different countries to see the consumption, production, and ecological footprints. See why sustainable resource management is critical for our future.
               </p>
             </div>
 
