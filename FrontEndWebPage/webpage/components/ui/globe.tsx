@@ -18,7 +18,7 @@ const Globe3D = dynamic(() => import("react-globe.gl"), { ssr: false });
 export default function Globe({ onMarkerClick }: GlobeProps) {
   const markers: MyMarker[] = useMemo(
     () => [
-      { lat: 37.0904, lng: -95.7128, country: "United States" },
+      { lat: 37.0904, lng: -95.7128, country: "United States of America" },
       { lat: 35.8617, lng: 104.1954, country: "China" },
       { lat: 19.076, lng: 72.8777, country: "India" },
       { lat: -30.5595, lng: 22.9375, country: "South Africa" },
