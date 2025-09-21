@@ -23,7 +23,7 @@ export default function Home() {
     setError(null);
     try {
       const res = await fetch(
-        `http://localhost:8000/locations/${marker.country}/profile?year=2024`
+        `https://hackricefall2025.onrender.com/locations/${marker.country}/profile?year=2024`
       );
       if (!res.ok) throw new Error("Failed to fetch data");
       const data: FootprintData = await res.json();
