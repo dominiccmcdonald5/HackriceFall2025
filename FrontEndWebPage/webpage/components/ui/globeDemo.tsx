@@ -2,7 +2,7 @@
 import Globe from "@/components/ui/globe";
 
 interface GlobeDemoProps {
-  onMarkerClick?: (marker: { country: string }) => void;
+  onMarkerClick?: (marker: { lat: number; lng: number; country: string }) => void;
 }
 
 export default function GlobeDemo({ onMarkerClick }: GlobeDemoProps) {
